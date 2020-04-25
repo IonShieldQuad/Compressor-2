@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Compressor-2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Compressor_2_jar</output-path>
+    <root id="archive" name="Compressor-2.jar">
+      <element id="module-output" name="Compressor-2" />
+    </root>
+  </artifact>
+</component>
