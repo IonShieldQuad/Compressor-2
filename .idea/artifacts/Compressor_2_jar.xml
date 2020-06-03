@@ -3,6 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Compressor_2_jar</output-path>
     <root id="archive" name="Compressor-2.jar">
       <element id="module-output" name="Compressor-2" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/XAMPP 7.4.5/tomcat/lib/servlet-api.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

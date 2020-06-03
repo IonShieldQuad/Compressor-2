@@ -109,7 +109,7 @@ public class HuffmanCompressor implements Compressor {
             extraData.add(extraBuilder.toString());
         }
         
-        out.add(/*Base64.getEncoder().encodeToString(bytes)*/new String(bytes));
+        out.add(Base64.getEncoder().encodeToString(bytes)/*new String(bytes)*/);
         
         return out;
     }
@@ -142,7 +142,7 @@ public class HuffmanCompressor implements Compressor {
             for (int i = l; i < lines.size(); i++) {
                 sb.append(lines.get(i));
             }
-            byte[] bytes = /*Base64.getDecoder().decode(sb.toString())*/ sb.toString().getBytes();
+            byte[] bytes = Base64.getDecoder().decode(sb.toString()) /*sb.toString().getBytes()*/;
     
             ByteArrayInputStream stream = new ByteArrayInputStream(bytes);
             BitInputStream bs = new BitInputStream(stream);
@@ -175,7 +175,7 @@ public class HuffmanCompressor implements Compressor {
                     } catch (EOFException e) {
                         i = msgLen;
                         //e.printStackTrace();
-                        //break;
+                        break;
                     } catch (IOException e) {
                         e.printStackTrace();
                         throw new IllegalArgumentException("IO Error " + e.getMessage());
